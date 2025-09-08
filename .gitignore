@@ -1,0 +1,2 @@
+syslog_server/logs/*
+!syslog_server/logs/.gitkeep

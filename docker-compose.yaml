@@ -1,0 +1,16 @@
+services:
+  syslog:
+    build: ./syslog_server/
+    volumes:
+      - ./syslog_server:/app
+    ports:
+      - 514:514
+      - 514:514/udp
+    tty: true
+  ntp:
+    build: ./ntp_server/
+    volumes:
+      - ./ntp_server:/app
+    ports:
+      - 123:123/udp
+    tty: true
