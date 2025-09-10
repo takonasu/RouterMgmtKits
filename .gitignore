@@ -1,2 +1,4 @@
 syslog_server/logs/*
+snmp_server/logs/*
 !syslog_server/logs/.gitkeep
+!snmp_server/logs/.gitkeep
